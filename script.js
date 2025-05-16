@@ -11,6 +11,7 @@ function backspace() {
 function calculateResult() {
     try {
         let result = new Function("return " + display.value)();
+        display.value = result;
     } catch {
         display.value = "Error";
     }
